@@ -44,7 +44,7 @@ public class TestZarker {
         driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
     }
 
-    @Test
+   // @Test
     public void testBrowser() throws MalformedURLException, InterruptedException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.BROWSER_NAME,"chrome");
@@ -65,7 +65,7 @@ public class TestZarker {
 
     }
 
-    @Test
+   // @Test
     public void testZaker() throws InterruptedException {
        Thread.sleep(8000);
 
@@ -79,7 +79,7 @@ public class TestZarker {
 
     }
 
-    @Test
+   // @Test
     public void testXiaoChengXu() throws MalformedURLException, InterruptedException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("deviceName","b53bbecd");
@@ -103,7 +103,7 @@ public class TestZarker {
         driver.quit();
     }
 
-    @Test
+  //  @Test
     public void TestXueQiuWebView() throws IOException, InterruptedException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("deviceName","b53bbecd");

@@ -45,7 +45,7 @@ public class TestXueQiu {
         driver=new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
     }
 
-    @Before
+    //@Before
     public void beforeChromeBrowser() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"b53bbecd");
@@ -55,7 +55,7 @@ public class TestXueQiu {
         driver=new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
     }
 
-    @Test
+   // @Test
     public void test2() throws InterruptedException {
         driver.get("http://saucelabs.com/test/guinea-pig");
         WebElement div = driver.findElement(By.id("i_am_an_id"));
@@ -64,7 +64,7 @@ public class TestXueQiu {
         Thread.sleep(10000);
     }
 
-    @Test
+   // @Test
     public void test1() throws Exception {
         driver.ignoreUnimportantViews(true);
         driver.startRecordingScreen();
@@ -243,14 +243,14 @@ public class TestXueQiu {
 //        }
 //    }
 
-    @Test
+    //@Test
     public void printPS() throws InterruptedException {
         Thread.sleep(5000);
         System.out.println(driver.getPageSource());
 
     }
 
-    @Test
+   // @Test
     public void demo() throws InterruptedException {
         Thread.sleep(5000);
         driver.findElementByXPath("//*[@text='自选']").click();
@@ -258,7 +258,7 @@ public class TestXueQiu {
     }
 
 
-    @Test
+    //@Test
     public  void testScroll() throws InterruptedException {
         Thread.sleep(20000);
 
@@ -276,7 +276,7 @@ public class TestXueQiu {
         Thread.sleep(20000);
     }
 
-    @Test
+    //@Test
     public void testToast() throws InterruptedException, IOException {
 
 
@@ -355,7 +355,7 @@ public class TestXueQiu {
 //    }
 
 
-    @After
+   // @After
     public void teardown() throws IOException {
 
 //        System.out.println(driver.getPageSource());
